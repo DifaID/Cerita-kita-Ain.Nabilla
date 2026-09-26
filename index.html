@@ -1,0 +1,2410 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Untuk Nabila ♡</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+  --pink:#d85d89;
+  --pink-light:#f0a6c0;
+  --pink-soft:#f7dce7;
+  --wine:#7f304f;
+  --cream:#fff8fb;
+  --dark:#080507;
+  --dark2:#12090e;
+  --text:#eadde2;
+  --muted:#ad929e;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:var(--dark);
+  color:white;
+  font-family:"DM Sans",sans-serif;
+  overflow-x:hidden;
+}
+
+button{
+  font-family:inherit;
+}
+
+section{
+  position:relative;
+  overflow:hidden;
+}
+
+.container{
+  width:min(92%,1000px);
+  margin:auto;
+}
+
+/* ==================================================
+   LOADING / OPENING
+================================================== */
+
+.opening{
+  position:fixed;
+  inset:0;
+  z-index:99999;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+
+  background:
+    radial-gradient(
+      circle at 50% 35%,
+      rgba(220,76,130,.20),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 15% 85%,
+      rgba(255,160,195,.10),
+      transparent 25%
+    ),
+    #070406;
+
+  transition:
+    opacity 1.3s ease,
+    visibility 1.3s ease;
+}
+
+.opening.hide{
+  opacity:0;
+  visibility:hidden;
+}
+
+.opening::before{
+  content:"";
+  position:absolute;
+  inset:20px;
+
+  border:1px solid rgba(255,190,215,.12);
+}
+
+.opening-content{
+  position:relative;
+  z-index:2;
+}
+
+.opening-small{
+  font-size:10px;
+  letter-spacing:7px;
+  color:#d9a2b8;
+  margin-bottom:25px;
+}
+
+.opening-name{
+  font-family:"Great Vibes",cursive;
+  font-size:clamp(75px,20vw,145px);
+  font-weight:400;
+  line-height:.9;
+
+  color:white;
+
+  text-shadow:
+    0 0 25px rgba(255,110,165,.25);
+}
+
+.opening-full{
+  margin-top:14px;
+
+  font-family:"Cormorant Garamond",serif;
+
+  letter-spacing:8px;
+  font-size:13px;
+
+  color:#dca8ba;
+}
+
+.opening-line{
+  width:90px;
+  height:1px;
+
+  margin:30px auto;
+
+  background:
+    linear-gradient(
+      to right,
+      transparent,
+      #d86b91,
+      transparent
+    );
+}
+
+.opening-message{
+  color:#a98b98;
+  font-family:"Cormorant Garamond",serif;
+  font-size:20px;
+  font-style:italic;
+}
+
+.open-button{
+  margin-top:40px;
+
+  padding:15px 32px;
+
+  color:white;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,255,255,.08),
+      rgba(215,80,130,.15)
+    );
+
+  border:1px solid rgba(255,180,205,.45);
+
+  border-radius:50px;
+
+  letter-spacing:3px;
+  font-size:10px;
+
+  cursor:pointer;
+
+  transition:.5s;
+}
+
+.open-button:hover{
+  background:#c94f7b;
+  border-color:#c94f7b;
+
+  box-shadow:
+    0 0 35px rgba(210,75,130,.4);
+}
+
+/* ==================================================
+   MUSIC
+================================================== */
+
+.music-button{
+  position:fixed;
+
+  right:20px;
+  bottom:20px;
+
+  width:48px;
+  height:48px;
+
+  z-index:500;
+
+  border-radius:50%;
+
+  border:1px solid rgba(255,190,215,.35);
+
+  background:rgba(20,7,13,.75);
+
+  backdrop-filter:blur(15px);
+
+  color:#efabc4;
+
+  cursor:pointer;
+
+  font-size:16px;
+
+  box-shadow:
+    0 8px 30px rgba(0,0,0,.3);
+}
+
+/* ==================================================
+   HERO
+================================================== */
+
+.hero{
+  min-height:100vh;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  text-align:center;
+
+  background:
+
+    radial-gradient(
+      circle at 50% 45%,
+      rgba(214,62,119,.18),
+      transparent 28%
+    ),
+
+    radial-gradient(
+      circle at 10% 15%,
+      rgba(255,160,190,.08),
+      transparent 25%
+    ),
+
+    radial-gradient(
+      circle at 90% 80%,
+      rgba(230,70,140,.08),
+      transparent 30%
+    ),
+
+    linear-gradient(
+      145deg,
+      #070507,
+      #180a11 55%,
+      #080507
+    );
+}
+
+.hero-frame{
+  position:absolute;
+
+  inset:25px;
+
+  border:1px solid rgba(255,190,215,.09);
+
+  pointer-events:none;
+}
+
+.hero-content{
+  position:relative;
+  z-index:5;
+}
+
+.hero-small{
+  font-size:10px;
+  letter-spacing:7px;
+
+  color:#d7a1b6;
+}
+
+.hero-name{
+  margin-top:20px;
+
+  font-family:"Great Vibes",cursive;
+
+  font-size:clamp(90px,22vw,180px);
+
+  font-weight:400;
+
+  line-height:.8;
+}
+
+.hero-lastname{
+  margin-top:20px;
+
+  font-family:"Cormorant Garamond",serif;
+
+  letter-spacing:12px;
+
+  font-size:14px;
+
+  color:#e4b1c4;
+}
+
+.hero-divider{
+  width:100px;
+  height:1px;
+
+  margin:32px auto;
+
+  background:
+    linear-gradient(
+      to right,
+      transparent,
+      #d65b88,
+      transparent
+    );
+}
+
+.hero-date{
+  color:#ad8d9b;
+
+  font-size:11px;
+
+  letter-spacing:4px;
+}
+
+.scroll-hint{
+  position:absolute;
+
+  bottom:30px;
+  left:50%;
+
+  transform:translateX(-50%);
+
+  color:#8d6d7a;
+
+  font-size:9px;
+
+  letter-spacing:4px;
+}
+
+/* ==================================================
+   FLOWER ORNAMENT
+================================================== */
+
+.flower{
+  position:absolute;
+
+  width:280px;
+  height:280px;
+
+  pointer-events:none;
+
+  opacity:.82;
+}
+
+.flower svg{
+  width:100%;
+  height:100%;
+}
+
+.flower-tl{
+  top:-70px;
+  left:-65px;
+
+  transform:rotate(-12deg);
+}
+
+.flower-tr{
+  top:-70px;
+  right:-65px;
+
+  transform:
+    scaleX(-1)
+    rotate(-12deg);
+}
+
+.flower-bl{
+  bottom:-80px;
+  left:-60px;
+
+  transform:
+    scaleY(-1)
+    rotate(-12deg);
+}
+
+.flower-br{
+  bottom:-80px;
+  right:-60px;
+
+  transform:scale(-1);
+}
+
+/* ==================================================
+   INTRO
+================================================== */
+
+.intro{
+  padding:150px 0;
+
+  text-align:center;
+
+  background:
+
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(215,77,130,.13),
+      transparent 35%
+    ),
+
+    #0c070a;
+}
+
+.eyebrow{
+  color:#d99ab1;
+
+  font-size:10px;
+
+  letter-spacing:6px;
+
+  text-transform:uppercase;
+}
+
+.big-title{
+  margin-top:18px;
+
+  font-family:"Cormorant Garamond",serif;
+
+  font-size:clamp(43px,9vw,75px);
+
+  font-weight:500;
+
+  line-height:1.05;
+}
+
+.divider{
+  width:80px;
+  height:1px;
+
+  margin:30px auto;
+
+  background:
+    linear-gradient(
+      to right,
+      transparent,
+      #d76690,
+      transparent
+    );
+}
+
+.intro-text{
+  max-width:700px;
+
+  margin:0 auto;
+
+  font-family:"Cormorant Garamond",serif;
+
+  color:#d9cbd1;
+
+  font-size:25px;
+
+  line-height:1.75;
+}
+
+/* ==================================================
+   TIMELINE
+================================================== */
+
+.timeline{
+  padding:120px 0 150px;
+
+  background:
+
+    radial-gradient(
+      circle at 50% 50%,
+      rgba(130,35,75,.14),
+      transparent 45%
+    ),
+
+    #0b0609;
+}
+
+.timeline-head{
+  text-align:center;
+}
+
+.timeline-wrap{
+  position:relative;
+
+  max-width:750px;
+
+  margin:75px auto 0;
+}
+
+.timeline-wrap::before{
+  content:"";
+
+  position:absolute;
+
+  top:0;
+  bottom:0;
+
+  left:50%;
+
+  width:1px;
+
+  background:
+    linear-gradient(
+      to bottom,
+      transparent,
+      rgba(216,93,137,.45),
+      transparent
+    );
+}
+
+.timeline-item{
+  position:relative;
+
+  width:50%;
+
+  padding:20px 45px;
+
+  margin-bottom:45px;
+}
+
+.timeline-item:nth-child(odd){
+  text-align:right;
+}
+
+.timeline-item:nth-child(even){
+  margin-left:50%;
+}
+
+.timeline-dot{
+  position:absolute;
+
+  top:27px;
+
+  width:10px;
+  height:10px;
+
+  border-radius:50%;
+
+  background:#dc7198;
+
+  box-shadow:
+    0 0 20px rgba(220,90,140,.7);
+}
+
+.timeline-item:nth-child(odd) .timeline-dot{
+  right:-5px;
+}
+
+.timeline-item:nth-child(even) .timeline-dot{
+  left:-5px;
+}
+
+.timeline-year{
+  color:#db789c;
+
+  font-family:"Cormorant Garamond",serif;
+
+  font-size:32px;
+}
+
+.timeline-title{
+  margin-top:5px;
+
+  font-family:"Cormorant Garamond",serif;
+
+  font-size:25px;
+}
+
+.timeline-text{
+  margin-top:10px;
+
+  color:#a9929d;
+
+  font-size:13px;
+
+  line-height:1.8;
+}
+
+/* ==================================================
+   GAME MEMORY
+================================================== */
+
+.game-section{
+  padding:140px 20px;
+
+  background:
+
+    radial-gradient(
+      circle at center,
+      rgba(218,70,126,.16),
+      transparent 40%
+    ),
+
+    #0e080c;
+
+  text-align:center;
+}
+
+.game-card{
+  position:relative;
+
+  max-width:800px;
+
+  margin:60px auto 0;
+
+  padding:55px 35px;
+
+  background:
+
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.045),
+      rgba(217,70,125,.025)
+    );
+
+  border:
+
+    1px solid
+    rgba(255,190,215,.13);
+
+  box-shadow:
+    0 30px 90px rgba(0,0,0,.35);
+
+  overflow:hidden;
+}
+
+.game-card::before{
+  content:"";
+
+  position:absolute;
+
+  inset:15px;
+
+  border:
+    1px solid
+    rgba(255,190,215,.07);
+}
+
+.game-label{
+  position:relative;
+  z-index:2;
+
+  font-size:9px;
+
+  letter-spacing:5px;
+
+  color:#d796ad;
+}
+
+.game-title{
+  position:relative;
+  z-index:2;
+
+  margin-top:15px;
+
+  font-family:"Cormorant Garamond",serif;
+
+  font-size:38px;
+}
+
+.game-sub{
+  position:relative;
+  z-index:2;
+
+  margin-top:10px;
+
+  color:#9f8994;
+
+  font-size:13px;
+}
+
+.game-logos{
+  position:relative;
+  z-index:2;
+
+  display:flex;
+
+  align-items:center;
+  justify-content:center;
+
+  gap:35px;
+
+  margin-top:45px;
+}
+
+.game-logo{
+  width:220px;
+
+  padding:20px 10px;
+}
+
+.game-logo img{
+  width:150px;
+  height:105px;
+
+  object-fit:contain;
+
+  display:block;
+
+  margin:auto;
+
+  filter:
+    drop-shadow(
+      0 10px 20px
+      rgba(0,0,0,.35)
+    );
+}
+
+.game-logo-name{
+  margin-top:15px;
+
+  font-family:"Cormorant Garamond",serif;
+
+  letter-spacing:3px;
+
+  font-size:13px;
+
+  color:#e4c1ce;
+}
+
+.game-separator{
+  width:1px;
+  height:100px;
+
+  background:
+    linear-gradient(
+      to bottom,
+      transparent,
+      #d66d93,
+      transparent
+    );
+}
+
+.game-caption{
+  position:relative;
+  z-index:2;
+
+  max-width:500px;
+
+  margin:40px auto 0;
+
+  font-family:"Cormorant Garamond",serif;
+
+  color:#c5afb9;
+
+  font-size:21px;
+
+  line-height:1.7;
+
+  font-style:italic;
+}
+
+/* ==================================================
+   LETTER
+================================================== */
+
+.letter-section{
+  padding:150px 15px;
+
+  background:
+
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(245,100,155,.13),
+      transparent 28%
+    ),
+
+    radial-gradient(
+      circle at 85% 80%,
+      rgba(245,100,155,.12),
+      transparent 28%
+    ),
+
+    #10070c;
+}
+
+.letter-heading{
+  text-align:center;
+}
+
+.letter-wrapper{
+  position:relative;
+
+  max-width:880px;
+
+  margin:70px auto 0;
+}
+
+.letter-glow{
+  position:absolute;
+
+  inset:-30px;
+
+  background:
+    radial-gradient(
+      ellipse,
+      rgba(224,82,137,.22),
+      transparent 65%
+    );
+
+  filter:blur(35px);
+}
+
+.letter{
+  position:relative;
+
+  padding:
+    85px
+    clamp(28px,7vw,90px);
+
+  background:
+
+    radial-gradient(
+      circle at 0% 0%,
+      rgba(235,119,158,.17),
+      transparent 23%
+    ),
+
+    radial-gradient(
+      circle at 100% 100%,
+      rgba(221,96,145,.15),
+      transparent 25%
+    ),
+
+    linear-gradient(
+      145deg,
+      #fffafb,
+      #f8e8ef 50%,
+      #fff8fb
+    );
+
+  color:#39252d;
+
+  border:
+    1px solid
+    rgba(255,220,230,.8);
+
+  box-shadow:
+    0 35px 100px rgba(0,0,0,.55),
+
+    inset
+    0 0 80px
+    rgba(170,60,100,.06);
+
+  overflow:hidden;
+}
+
+.letter::before{
+  content:"";
+
+  position:absolute;
+
+  inset:17px;
+
+  border:
+    1px solid
+    rgba(145,57,90,.22);
+
+  pointer-events:none;
+}
+
+.letter::after{
+  content:"";
+
+  position:absolute;
+
+  inset:25px;
+
+  border:
+    1px solid
+    rgba(145,57,90,.08);
+
+  pointer-events:none;
+}
+
+.letter-header{
+  position:relative;
+
+  z-index:3;
+
+  text-align:center;
+
+  margin-bottom:48px;
+}
+
+.letter-heart{
+  color:#c84c78;
+
+  font-size:25px;
+
+  margin-bottom:10px;
+}
+
+.letter-title{
+  font-family:"Great Vibes",cursive;
+
+  font-size:62px;
+
+  font-weight:400;
+
+  color:#9b3d61;
+}
+
+.letter-subtitle{
+  margin-top:5px;
+
+  font-family:"Cormorant Garamond",serif;
+
+  font-size:13px;
+
+  letter-spacing:5px;
+
+  text-transform:uppercase;
+
+  color:#9a7180;
+}
+
+.letter-body{
+  position:relative;
+
+  z-index:3;
+}
+
+.letter-body p{
+  font-size:17px;
+
+  line-height:2;
+
+  margin-bottom:25px;
+
+  color:#47343b;
+}
+
+.letter-body .first{
+  font-family:"Cormorant Garamond",serif;
+
+  font-size:32px;
+
+  color:#9c3f63;
+}
+
+.letter-highlight{
+  margin:40px 0;
+
+  padding:28px 30px;
+
+  border-left:
+    3px solid
+    #d0648d;
+
+  background:
+    rgba(255,255,255,.40);
+
+  font-family:"Cormorant Garamond",serif;
+
+  font-size:25px;
+
+  line-height:1.6;
+
+  color:#693e50;
+}
+
+.letter-sign{
+  margin-top:55px;
+
+  text-align:right;
+
+  font-family:"Great Vibes",cursive;
+
+  font-size:42px;
+
+  color:#9d3e63;
+}
+
+/* ==================================================
+   LETTER FLOWERS
+================================================== */
+
+.letter-flower{
+  position:absolute;
+
+  width:210px;
+
+  opacity:.30;
+
+  pointer-events:none;
+
+  z-index:1;
+}
+
+.letter-flower.top{
+  top:-30px;
+  right:-35px;
+
+  transform:rotate(15deg);
+}
+
+.letter-flower.bottom{
+  bottom:-45px;
+  left:-35px;
+
+  transform:
+    rotate(-25deg)
+    scale(.9);
+}
+
+/* ==================================================
+   RELEASE
+================================================== */
+
+.release{
+  padding:160px 20px;
+
+  text-align:center;
+
+  background:
+
+    radial-gradient(
+      circle at center,
+      rgba(213,75,130,.17),
+      transparent 40%
+    ),
+
+    #090507;
+}
+
+.release-text{
+  max-width:700px;
+
+  margin:40px auto;
+
+  font-family:"Cormorant Garamond",serif;
+
+  color:#d9c7cf;
+
+  font-size:27px;
+
+  line-height:1.8;
+}
+
+.release-small{
+  color:#987e8b;
+
+  font-size:12px;
+
+  line-height:2;
+}
+
+/* ==================================================
+   SOCIAL
+================================================== */
+
+.social{
+  padding:110px 20px;
+
+  background:#11080d;
+
+  text-align:center;
+}
+
+.social-buttons{
+  display:flex;
+
+  justify-content:center;
+
+  flex-wrap:wrap;
+
+  gap:12px;
+
+  margin-top:45px;
+}
+
+.social-button{
+  display:block;
+
+  text-decoration:none;
+
+  color:#eacfd9;
+
+  padding:14px 22px;
+
+  border:
+    1px solid
+    rgba(255,190,215,.18);
+
+  border-radius:50px;
+
+  font-size:11px;
+
+  transition:.4s;
+}
+
+.social-button:hover{
+  background:#c94f7b;
+
+  border-color:#c94f7b;
+
+  color:white;
+}
+
+/* ==================================================
+   FINAL
+================================================== */
+
+.final{
+  min-height:90vh;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  text-align:center;
+
+  background:
+
+    radial-gradient(
+      circle at center,
+      rgba(221,74,132,.20),
+      transparent 40%
+    ),
+
+    #070406;
+}
+
+.final-content{
+  max-width:800px;
+}
+
+.final-small{
+  color:#d798ae;
+
+  font-size:10px;
+
+  letter-spacing:6px;
+}
+
+.final-title{
+  margin:30px 0;
+
+  font-family:"Great Vibes",cursive;
+
+  font-size:clamp(60px,14vw,115px);
+
+  font-weight:400;
+}
+
+.final-text{
+  font-family:"Cormorant Garamond",serif;
+
+  color:#c7b2bb;
+
+  font-size:25px;
+
+  line-height:1.8;
+}
+
+.final-heart{
+  margin-top:40px;
+
+  color:#dc6b94;
+
+  font-size:25px;
+}
+
+/* ==================================================
+   PETALS
+================================================== */
+
+.petal{
+  position:fixed;
+
+  top:-30px;
+
+  width:8px;
+  height:12px;
+
+  background:#e985a9;
+
+  border-radius:
+    80% 20% 80% 20%;
+
+  opacity:.45;
+
+  pointer-events:none;
+
+  z-index:20;
+
+  animation:
+    falling linear forwards;
+}
+
+@keyframes falling{
+
+  to{
+
+    transform:
+      translateY(110vh)
+      translateX(120px)
+      rotate(600deg);
+
+  }
+
+}
+
+/* ==================================================
+   REVEAL
+================================================== */
+
+.reveal{
+  opacity:0;
+
+  transform:translateY(35px);
+
+  transition:
+    opacity 1s ease,
+    transform 1s ease;
+}
+
+.reveal.show{
+  opacity:1;
+
+  transform:translateY(0);
+}
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media(max-width:700px){
+
+  .hero-frame{
+    inset:12px;
+  }
+
+  .flower{
+    width:190px;
+    height:190px;
+  }
+
+  .timeline-wrap::before{
+    left:10px;
+  }
+
+  .timeline-item,
+  .timeline-item:nth-child(even){
+    width:100%;
+
+    margin-left:0;
+
+    padding:
+      20px
+      20px
+      20px
+      40px;
+
+    text-align:left;
+  }
+
+  .timeline-item:nth-child(odd){
+    text-align:left;
+  }
+
+  .timeline-dot,
+  .timeline-item:nth-child(odd) .timeline-dot,
+  .timeline-item:nth-child(even) .timeline-dot{
+    left:5px;
+    right:auto;
+  }
+
+  .game-card{
+    padding:45px 15px;
+  }
+
+  .game-logos{
+    gap:5px;
+  }
+
+  .game-logo{
+    width:145px;
+  }
+
+  .game-logo img{
+    width:105px;
+    height:80px;
+  }
+
+  .game-separator{
+    height:75px;
+  }
+
+  .letter{
+    padding:
+      70px
+      25px;
+  }
+
+  .letter-title{
+    font-size:50px;
+  }
+
+  .letter-body p{
+    font-size:16px;
+
+    line-height:1.95;
+  }
+
+  .letter-highlight{
+    font-size:21px;
+
+    padding:22px;
+  }
+
+  .release-text{
+    font-size:23px;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+
+<!-- ==================================================
+     OPENING
+================================================== -->
+
+<div class="opening" id="opening">
+
+  <div class="opening-content">
+
+    <div class="opening-small">
+      sebuah cerita yang belum selesai
+    </div>
+
+    <div class="opening-name">
+      Ainun
+    </div>
+
+    <div class="opening-full">
+      N A B I L L A
+    </div>
+
+    <div class="opening-line"></div>
+
+    <div class="opening-message">
+      untuk seseorang yang pernah begitu berarti
+    </div>
+
+    <button
+      class="open-button"
+      onclick="openLetter()"
+    >
+      BUKA SURAT
+    </button>
+
+  </div>
+
+</div>
+
+
+<!-- ==================================================
+     MUSIC
+================================================== -->
+
+<audio id="music" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<button
+  class="music-button"
+  id="musicButton"
+  onclick="toggleMusic()"
+>
+  ♫
+</button>
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<section class="hero">
+
+  <div class="hero-frame"></div>
+
+
+  <!-- FLOWER TOP LEFT -->
+
+  <div class="flower flower-tl">
+
+    <svg viewBox="0 0 300 300">
+
+      <path
+        d="M15 25 C80 45 100 100 150 150 C190 190 230 245 285 280"
+        fill="none"
+        stroke="#754354"
+        stroke-width="3"
+      />
+
+      <path
+        d="M70 65
+        C25 35 25 75 62 83
+        C28 105 65 135 90 92
+        C115 125 145 93 110 73
+        C130 40 95 32 70 65Z"
+        fill="#c84d7a"
+      />
+
+      <circle
+        cx="78"
+        cy="73"
+        r="23"
+        fill="#ed8eac"
+      />
+
+      <circle
+        cx="78"
+        cy="73"
+        r="11"
+        fill="#a93662"
+      />
+
+      <path
+        d="M105 100 C80 120 75 150 100 153 C125 150 130 125 105 100Z"
+        fill="#64815d"
+      />
+
+      <path
+        d="M145 142 C115 145 115 175 140 180 C160 170 162 150 145 142Z"
+        fill="#78936b"
+      />
+
+      <path
+        d="M190 190 C160 185 155 215 182 225 C207 225 210 205 190 190Z"
+        fill="#66865e"
+      />
+
+    </svg>
+
+  </div>
+
+
+  <!-- FLOWER TOP RIGHT -->
+
+  <div class="flower flower-tr">
+
+    <svg viewBox="0 0 300 300">
+
+      <path
+        d="M15 25 C80 45 100 100 150 150 C190 190 230 245 285 280"
+        fill="none"
+        stroke="#754354"
+        stroke-width="3"
+      />
+
+      <path
+        d="M70 65
+        C25 35 25 75 62 83
+        C28 105 65 135 90 92
+        C115 125 145 93 110 73
+        C130 40 95 32 70 65Z"
+        fill="#c84d7a"
+      />
+
+      <circle
+        cx="78"
+        cy="73"
+        r="23"
+        fill="#ed8eac"
+      />
+
+      <circle
+        cx="78"
+        cy="73"
+        r="11"
+        fill="#a93662"
+      />
+
+      <path
+        d="M105 100 C80 120 75 150 100 153 C125 150 130 125 105 100Z"
+        fill="#64815d"
+      />
+
+      <path
+        d="M145 142 C115 145 115 175 140 180 C160 170 162 150 145 142Z"
+        fill="#78936b"
+      />
+
+    </svg>
+
+  </div>
+
+
+  <div class="hero-content reveal">
+
+    <div class="hero-small">
+      UNTUK SESEORANG YANG PERNAH TINGGAL
+    </div>
+
+    <div class="hero-name">
+      Ainun
+    </div>
+
+    <div class="hero-lastname">
+      N A B I L L A
+    </div>
+
+    <div class="hero-divider"></div>
+
+    <div class="hero-date">
+      2022 — 2026
+    </div>
+
+  </div>
+
+
+  <div class="scroll-hint">
+    SCROLL PELAN-PELAN ↓
+  </div>
+
+</section>
+
+
+<!-- ==================================================
+     INTRO
+================================================== -->
+
+<section class="intro">
+
+  <div class="container reveal">
+
+    <div class="eyebrow">
+      sebuah cerita
+    </div>
+
+    <div class="big-title">
+      Ada nama yang<br>
+      tidak benar-benar pergi.
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="intro-text">
+
+      Ada seseorang yang pernah hadir sebentar,
+      tetapi kenangannya memilih tinggal jauh lebih lama.
+
+      Bukan karena cerita itu sempurna,
+      melainkan karena pernah ada rasa
+      yang benar-benar tulus di dalamnya.
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ==================================================
+     TIMELINE
+================================================== -->
+
+<section class="timeline">
+
+  <div class="container">
+
+    <div class="timeline-head reveal">
+
+      <div class="eyebrow">
+        perjalanan kecil kita
+      </div>
+
+      <div class="big-title">
+        Dari dulu sampai sekarang.
+      </div>
+
+    </div>
+
+
+    <div class="timeline-wrap">
+
+
+      <div class="timeline-item reveal">
+
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-year">
+          2022
+        </div>
+
+        <div class="timeline-title">
+          Pertama kali bertemu
+        </div>
+
+        <div class="timeline-text">
+          Kita bahkan tidak bertemu secara langsung.
+          Hanya dua orang yang dipertemukan
+          lewat sebuah game.
+        </div>
+
+      </div>
+
+
+      <div class="timeline-item reveal">
+
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-year">
+          Setelahnya
+        </div>
+
+        <div class="timeline-title">
+          Mulai saling mengenal
+        </div>
+
+        <div class="timeline-text">
+          Bertukar WhatsApp,
+          bermain bersama,
+          dan berbagi cerita
+          tentang kehidupan masing-masing.
+        </div>
+
+      </div>
+
+
+      <div class="timeline-item reveal">
+
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-year">
+          Bertahun-tahun
+        </div>
+
+        <div class="timeline-title">
+          Kabar yang hilang
+        </div>
+
+        <div class="timeline-text">
+          Nomor hilang.
+          Kesibukan datang.
+          Kehidupan berjalan.
+          Sampai akhirnya kita benar-benar kehilangan kabar.
+        </div>
+
+      </div>
+
+
+      <div class="timeline-item reveal">
+
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-year">
+          2026
+        </div>
+
+        <div class="timeline-title">
+          Nama itu kembali ditemukan
+        </div>
+
+        <div class="timeline-text">
+          Setelah pencarian yang panjang,
+          akhirnya aku menemukanmu lagi.
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ==================================================
+     PUBG MEMORY
+================================================== -->
+
+<section class="game-section">
+
+  <div class="container">
+
+    <div class="eyebrow reveal">
+      tempat cerita ini bermula
+    </div>
+
+    <div class="big-title reveal">
+      Sebelum semuanya menjadi kenangan.
+    </div>
+
+
+    <div class="game-card reveal">
+
+      <div class="game-label">
+        OUR LITTLE DIGITAL MEMORY
+      </div>
+
+      <div class="game-title">
+        Dari sebuah permainan,
+        menjadi sebuah kenangan.
+      </div>
+
+      <div class="game-sub">
+        Dua game yang pernah menjadi tempat kita bertemu.
+      </div>
+
+
+      <div class="game-logos">
+
+
+        <div class="game-logo">
+
+          <img
+            src="pubg-lite.png"
+            alt="PUBG Lite"
+          >
+
+          <div class="game-logo-name">
+            PUBG LITE
+          </div>
+
+        </div>
+
+
+        <div class="game-separator"></div>
+
+
+        <div class="game-logo">
+
+          <img
+            src="pubg-mobile.png"
+            alt="PUBG Mobile"
+          >
+
+          <div class="game-logo-name">
+            PUBG MOBILE
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+      <div class="game-caption">
+
+        “Dulu kita hanya bertemu lewat game,
+        tetapi tanpa sadar,
+        dari sana lahir sebuah cerita
+        yang bertahan jauh lebih lama
+        daripada permainan itu sendiri.”
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ==================================================
+     LETTER
+================================================== -->
+
+<section class="letter-section">
+
+  <div class="container">
+
+    <div class="letter-heading reveal">
+
+      <div class="eyebrow">
+        surat untukmu
+      </div>
+
+      <div class="big-title">
+        Ada sesuatu yang<br>
+        ingin kusampaikan.
+      </div>
+
+    </div>
+
+
+    <div class="letter-wrapper reveal">
+
+      <div class="letter-glow"></div>
+
+
+      <article class="letter">
+
+
+        <!-- DECORATIVE FLOWER -->
+
+        <div class="letter-flower top">
+
+          <svg viewBox="0 0 250 250">
+
+            <path
+              d="M30 20 C90 60 120 110 220 220"
+              fill="none"
+              stroke="#986276"
+              stroke-width="3"
+            />
+
+            <path
+              d="M90 65
+              C45 30 35 70 70 83
+              C45 110 80 130 100 92
+              C125 125 155 90 115 70
+              C135 40 110 35 90 65Z"
+              fill="#cf668b"
+            />
+
+            <circle
+              cx="91"
+              cy="72"
+              r="20"
+              fill="#ec98b3"
+            />
+
+            <circle
+              cx="91"
+              cy="72"
+              r="9"
+              fill="#aa3d65"
+            />
+
+            <path
+              d="M125 110 C95 105 90 135 115 145 C140 140 142 120 125 110Z"
+              fill="#708b64"
+            />
+
+          </svg>
+
+        </div>
+
+
+        <div class="letter-flower bottom">
+
+          <svg viewBox="0 0 250 250">
+
+            <path
+              d="M30 20 C90 60 120 110 220 220"
+              fill="none"
+              stroke="#986276"
+              stroke-width="3"
+            />
+
+            <path
+              d="M90 65
+              C45 30 35 70 70 83
+              C45 110 80 130 100 92
+              C125 125 155 90 115 70
+              C135 40 110 35 90 65Z"
+              fill="#cf668b"
+            />
+
+            <circle
+              cx="91"
+              cy="72"
+              r="20"
+              fill="#ec98b3"
+            />
+
+            <circle
+              cx="91"
+              cy="72"
+              r="9"
+              fill="#aa3d65"
+            />
+
+            <path
+              d="M125 110 C95 105 90 135 115 145 C140 140 142 120 125 110Z"
+              fill="#708b64"
+            />
+
+          </svg>
+
+        </div>
+
+
+        <!-- LETTER HEADER -->
+
+        <div class="letter-header">
+
+          <div class="letter-heart">
+            ♡
+          </div>
+
+          <div class="letter-title">
+            Untuk Nabila
+          </div>
+
+          <div class="letter-subtitle">
+            dengan segala yang pernah tersimpan
+          </div>
+
+        </div>
+
+
+        <!-- LETTER CONTENT -->
+
+        <div class="letter-body">
+
+
+          <p class="first">
+            Nabila...
+          </p>
+
+
+          <p>
+
+            Setelah lebih dari tiga tahun kehilangan kabar,
+            akhirnya Allah mempertemukan kita lagi.
+
+            Dulu kita hanya bertemu lewat game,
+            bertukar WhatsApp,
+            saling menemani bermain,
+            dan berbagi cerita.
+
+            Mungkin sederhana,
+            tapi entah kenapa kenangan tentangmu
+            tetap tinggal cukup lama di kepalaku.
+
+          </p>
+
+
+          <p>
+
+            Bahkan setelah hidup membawaku kehilangan banyak hal,
+            termasuk Ade, Ibu, dan Bapak,
+            aku masih sempat meminta kepada Allah
+            agar suatu hari bisa menemukanmu lagi.
+
+          </p>
+
+
+          <div class="letter-highlight">
+
+            Dan akhirnya...
+            aku menemukanmu.
+
+          </div>
+
+
+          <p>
+
+            Tapi ternyata selama aku mencari,
+            kamu sudah berjalan jauh.
+
+            Kamu sudah punya kehidupan sendiri,
+            bahkan sudah bertunangan.
+
+          </p>
+
+
+          <p>
+
+            Jujur,
+            ada bagian dari diriku yang sakit.
+
+            Bukan karena aku menyalahkanmu,
+            apalagi merasa berhak atas hidupmu.
+
+            Mungkin aku hanya terlambat menyadari
+            bahwa seseorang yang masih aku simpan
+            dalam ingatan,
+            ternyata sudah menjadi bagian dari masa lalu.
+
+          </p>
+
+
+          <p>
+
+            Kalau setelah ini aku memilih
+            untuk sedikit menjauh,
+            bukan karena aku membencimu.
+
+          </p>
+
+
+          <p>
+
+            Aku hanya sedang belajar menerima bahwa
+            tidak semua orang yang kita rindukan
+            ditakdirkan untuk kembali tinggal
+            di hidup kita.
+
+          </p>
+
+
+          <div class="letter-highlight">
+
+            Kalau suatu hari nanti kamu mengingatku,
+            kamu masih bisa menemukanku.
+
+          </div>
+
+
+          <p>
+
+            Instagram:
+            <b>Rmn.tms.tynp3</b>
+
+            <br><br>
+
+            Facebook:
+            <b>Ora di spick</b>
+            atau
+            <b>Jar</b>
+
+          </p>
+
+
+          <p>
+
+            Aku sudah follow kamu.
+
+            Tapi setelah pesan ini,
+            aku nggak akan memaksa kamu
+            untuk membalas
+            atau bahkan mengingatku.
+
+          </p>
+
+
+          <p>
+
+            Terima kasih pernah hadir
+            di hidupku,
+            Nabila.
+
+          </p>
+
+
+          <p>
+
+            Mungkin dulu aku berharap
+            pertemuan kita kembali
+            menjadi awal dari sesuatu.
+
+          </p>
+
+
+          <p>
+
+            Tapi sekarang aku memilih
+            menganggapnya sebagai kesempatan terakhir
+            untuk mengatakan:
+
+          </p>
+
+
+          <div class="letter-highlight">
+
+            aku pernah benar-benar menyayangimu,
+            dan sekarang aku belajar
+            mengikhlaskanmu.
+
+          </div>
+
+
+          <p>
+
+            Semoga kamu bahagia
+            dengan pilihanmu.
+
+          </p>
+
+
+          <p>
+
+            Dan kalau ternyata memang bukan aku
+            yang ditakdirkan berjalan bersamamu,
+            semoga Allah memberi kita masing-masing
+            jalan yang terbaik.
+
+          </p>
+
+
+          <p>
+
+            Jaga dirimu baik-baik.
+
+          </p>
+
+
+          <p>
+
+            Untuk terakhir kalinya,
+            terima kasih sudah pernah menjadi bagian
+            dari ceritaku.
+
+          </p>
+
+
+          <div class="letter-sign">
+
+            seseorang yang pernah menyayangimu
+
+          </div>
+
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ==================================================
+     LETTING GO
+================================================== -->
+
+<section class="release">
+
+  <div class="container reveal">
+
+    <div class="eyebrow">
+      setelah semuanya
+    </div>
+
+    <div class="big-title">
+      Aku tidak ingin<br>
+      memaksa sebuah cerita.
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="release-text">
+
+      Ada orang-orang yang kita temui
+      bukan untuk tinggal selamanya,
+      tetapi untuk meninggalkan sesuatu
+      yang membuat kita belajar
+      tentang rasa,
+      kehilangan,
+      dan keikhlasan.
+
+    </div>
+
+    <div class="release-small">
+
+      Mungkin cerita kita berhenti di sini.<br>
+      Dan tidak apa-apa.
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ==================================================
+     SOCIAL
+================================================== -->
+
+<section class="social">
+
+  <div class="container reveal">
+
+    <div class="eyebrow">
+      jika suatu hari
+    </div>
+
+    <div class="big-title">
+      Kamu ingin menemukanku.
+    </div>
+
+    <div class="social-buttons">
+
+      <a
+        class="social-button"
+        href="https://instagram.com/Rmn.tms.tynp3"
+        target="_blank"
+      >
+        Instagram · Rmn.tms.tynp3
+      </a>
+
+      <a
+        class="social-button"
+        href="#"
+        onclick="return false"
+      >
+        Facebook · Ora di spick
+      </a>
+
+      <a
+        class="social-button"
+        href="#"
+        onclick="return false"
+      >
+        Facebook · Jar
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ==================================================
+     FINAL
+================================================== -->
+
+<section class="final">
+
+  <div class="final-content reveal">
+
+    <div class="final-small">
+      UNTUK TERAKHIR KALINYA
+    </div>
+
+    <div class="final-title">
+      Terima kasih, Nabila.
+    </div>
+
+    <div class="final-text">
+
+      Semoga Allah menjaga langkahmu,<br>
+
+      menjaga hatimu,<br>
+
+      dan memberikanmu jalan terbaik.
+
+    </div>
+
+    <div class="final-heart">
+      ♡
+    </div>
+
+  </div>
+
+</section>
+
+
+<script>
+
+/* ==================================================
+   OPEN WEBSITE
+================================================== */
+
+function openLetter(){
+
+  const opening =
+    document.getElementById("opening");
+
+  const music =
+    document.getElementById("music");
+
+  opening.classList.add("hide");
+
+  music.volume = 0.42;
+
+  music.play()
+    .then(()=>{
+      document
+        .getElementById("musicButton")
+        .innerHTML="♫";
+    })
+    .catch(()=>{});
+
+}
+
+
+/* ==================================================
+   MUSIC
+================================================== */
+
+function toggleMusic(){
+
+  const music =
+    document.getElementById("music");
+
+  const button =
+    document.getElementById("musicButton");
+
+
+  if(music.paused){
+
+    music.play();
+
+    button.innerHTML="♫";
+
+  }else{
+
+    music.pause();
+
+    button.innerHTML="Ⅱ";
+
+  }
+
+}
+
+
+/* ==================================================
+   SCROLL REVEAL
+================================================== */
+
+const observer =
+new IntersectionObserver(
+
+  entries => {
+
+    entries.forEach(entry => {
+
+      if(entry.isIntersecting){
+
+        entry.target
+          .classList
+          .add("show");
+
+      }
+
+    });
+
+  },
+
+  {
+    threshold:.12
+  }
+
+);
+
+
+document
+  .querySelectorAll(".reveal")
+  .forEach(element => {
+
+    observer.observe(element);
+
+  });
+
+
+/* ==================================================
+   FALLING ROSE PETALS
+================================================== */
+
+function createPetal(){
+
+  const petal =
+    document.createElement("div");
+
+  petal.className="petal";
+
+  petal.style.left =
+    Math.random()*100 + "vw";
+
+  petal.style.animationDuration =
+    (7 + Math.random()*7) + "s";
+
+  petal.style.opacity =
+    (.2 + Math.random()*.4);
+
+  petal.style.transform =
+    `rotate(${Math.random()*360}deg)`;
+
+  document.body.appendChild(petal);
+
+
+  setTimeout(()=>{
+
+    petal.remove();
+
+  },15000);
+
+}
+
+
+setInterval(createPetal,1000);
+
+
+for(let i=0;i<8;i++){
+
+  setTimeout(
+    createPetal,
+    i*350
+  );
+
+}
+
+</script>
+
+</body>
+</html>
